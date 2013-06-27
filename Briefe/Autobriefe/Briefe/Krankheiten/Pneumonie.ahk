@@ -1,28 +1,27 @@
-
 Gui, Pneumonie:Color, 0xffffff
 Gui, Pneumonie:Add, Text, x30 y20 w90 h20 +Center, Pneumonie
-Gui, Pneumonie:Add, Button, x5 y80 w65 h20, Einfügen
-Gui, Pneumonie:Add, Button, x5 y155 w65 h20, Einfügen
+Gui, Pneumonie:Add, Button, x5 y80 w65 h20, Einfï¿½gen
+Gui, Pneumonie:Add, Button, x5 y155 w65 h20, Einfï¿½gen
 Gui, Pneumonie:Add, Checkbox, x135 y85 w75 h15 +Right, Diagnosen
 Gui, Pneumonie:Add, Checkbox, x90 y160 w120 h15 +Right, Therapie und Verlauf
 Gui, Pneumonie:Add, Edit, x235 y85 w395 h50, 
 Gui, Pneumonie:Add, Edit, x235 y160 w395 h55, 
-Gui, Pneumonie:Add, Button, x165 y260 w70 h35, Alle einfügen
+Gui, Pneumonie:Add, Button, x165 y260 w70 h35, Alle einfï¿½gen
 Gui, Pneumonie:Add, Button, x270 y260 w70 h35, Abbrechen
-Gui, Pneumonie:Add, Button, x380 y260 w70 h35 gHauptmenü, Hauptmenü
+Gui, Pneumonie:Add, Button, x380 y260 w70 h35 gHauptmenï¿½, Hauptmenï¿½
 Gui, Pneumonie:Show, w702 h339, Pneumonie
 return
 
 
-Hauptmenü:
+Hauptmenï¿½:
 dir := A_ScriptDir
 msgbox % dir
 StringGetPos, position, dir, \ ,R
 msgbox % position
 StringLeft, dir, dir, position
 msgbox % dir
-dir := dir "\Hauptmenü.ahk"    ; oder .ahk oder was auch immer
-msgbox % dir
+dir := dir "\Hauptmenï¿½.ahk"    ; oder .ahk oder was auch immer
+;msgbox % dir
 run % dir
 
 return
